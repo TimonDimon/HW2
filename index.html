@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<header>
+    <h2>Ласкаво просимо на нашій сторінці</h2>
+    <nav>
+        <ul>
+            <li><a href="#">Головна сторінка</a></li>
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Наші послуги</a></li>
+            <li><a href="#">Контакти</a></li>
+        </ul>
+    </nav>
+</header>
+    <main>
+        <form action="#" class="form">
+            <fieldset>
+                <legend>Введіть Ваші данні</legend>
+                <div>
+
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" placeholder="Введіть ім'я" name="name" required><br>
+                </div>
+
+                <div>
+                <label for="email">Електронна пошта:</label>
+                <input type="email" placeholder="Введіть електрону пошту" id="email" name="email" required><br>
+                </div>
+
+                <div>
+                <label for="phone">Телефон:</label>
+                <input type="tel" placeholder="Введіть номер телефону" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+                </div>
+
+                <div>
+                <label for="message">Повідомлення:</label><br>
+                <textarea id="message" placeholder="Напишіть нам" name="message" rows="4" cols="50" required></textarea><br>
+                </div>
+
+                <div>
+                <label for="subscribe">Підписатися на розсилку:</label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+                </div>
+                <div>
+                    <h5>Передзвонювати</h5>
+                    <label>
+                        <span>Так</span>
+                        <input type="radio" name="calls" value="yes">
+                    </label>
+                    <label>
+                        <span>Ні</span>
+                        <input type="radio" name="calss" value="no">
+                    </label>
+                </div>
+                <br>
+                <div>
+                <label for="file">Оберіть файл:</label>
+                <input type="file" id="file" name="file">
+                </div>
+                <div>
+                <button type="submit">Надіслати</button>
+                <button type="reset">Очистити форму</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+<script src="js/script.js"></script>
+</body>
